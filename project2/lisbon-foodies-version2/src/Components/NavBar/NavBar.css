@@ -134,7 +134,7 @@ nav a:hover {
     align-items: center;
     gap: 50px;
     top: 74px;
-    clip-path: ellipse(70% 80% at 100% 50%);
+    clip-path: ellipse(85% 80% at 100% 50%);
 }
 
 .mobileNav a {
@@ -143,4 +143,11 @@ nav a:hover {
     font-size: 1.3rem;
     font-family: 'Inria Serif', serif;
     font-style: bold;
+}
+
+@media screen and (min-width:900px) {
+
+.mobileNav {
+    clip-path: ellipse(70% 80% at 100% 50%);
+    }
 }
