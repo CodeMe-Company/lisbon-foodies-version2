@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 import NavBar from './Components/NavBar/NavBar';
+import HomePage from './Components/HomePage/HomePage';
 
 function App() {
  
   return (
     <div className="App">
       <NavBar />
+      <HomePage />
     </div>
   );
 }
