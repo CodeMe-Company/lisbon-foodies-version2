@@ -1,0 +1,21 @@
+.search-area{
+    background-color: antiquewhite;
+    width: 30%;
+
+  }
+
+  .search-bar{
+    width: 100%;
+    border-bottom: 2px solid #000;
+  }
+  .search-bar input{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 4px;
+  }
+
+  .imageSearch {
+    width: 50px;
+    height: auto;
+}
