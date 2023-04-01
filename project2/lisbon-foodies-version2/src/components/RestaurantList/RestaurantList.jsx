@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import RestaurantCard from "../RestaurantCard/RestaurantCard"
 import SearchBar from "../SearchBar/SearchBar";
+import { Link } from 'react-router-dom';
 
 const RestaurantList = () => {
     const [restaurants, setRestaurants] = useState();
@@ -23,6 +24,7 @@ const RestaurantList = () => {
           options
         )
         .then((response) => setRestaurants(response.data.businesses))
+        // .then((response) => console.log(response.data.businesses))
         .catch((err) => console.error(err));
     };
   
@@ -58,16 +60,20 @@ const RestaurantList = () => {
           />
           {restaurants && search === ""
             ? restaurants.map((restaurant) => (
+              <Link to={`/restaurants/${restaurant.id}`}>
                 <div key={restaurant.id}>
                   <RestaurantCard restaurant={restaurant} />
                 </div>
+                </Link>
               ))
             : null}
           {restaurantSearch && search !== ""
             ? restaurantSearch.map((restaurant) => (
+              <Link to={`/restaurants/${restaurant.id}`}>
                 <div key={restaurant.id}>
                   <RestaurantCard restaurant={restaurant} />
                 </div>
+                </Link>
               ))
             : null}
         </div>
@@ -76,3 +82,4 @@ const RestaurantList = () => {
   }
 
 export default RestaurantList
+
