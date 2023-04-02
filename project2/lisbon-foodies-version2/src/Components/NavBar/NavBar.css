@@ -35,16 +35,6 @@ img{
     align-items: center;
     margin-bottom: 0;
 }
-  
-/* .navbar-desktop {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: none;
-    -ms-grid-columns: auto;
-    grid-template-columns: repeat(7, auto);
-    align-items: center;
-    z-index: 99;
-} */
 
 nav a {
     color: inherit;
@@ -96,8 +86,12 @@ nav a:hover {
 }
 
 .hamburger:after {
-    width: 20px;
-    float: right;
+    width: 30px;
+    /* float: right; */
+}
+
+.hamburger:before {
+    width: 30px;
 }
 
 .bar {
@@ -146,9 +140,27 @@ nav a:hover {
     font-style: bold;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:700px) {
 
 .mobileNav {
     clip-path: ellipse(70% 80% at 100% 50%);
     }
+
+.hamburger:after {
+    width: 60px;
+    /* float: right; */
+}
+
+.hamburger:before {
+    width: 60px;
+}
+
+.hamburger {
+    margin-right: 50px;
+}
+
+img {
+    width: 170px;
+    margin-top: 85px;
+}
 }
