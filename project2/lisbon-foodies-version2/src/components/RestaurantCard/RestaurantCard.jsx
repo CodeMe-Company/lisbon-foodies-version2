@@ -8,8 +8,8 @@ const RestaurantCard = ({restaurant}) => {
     
     <div key={restaurant.id}>
       <p>Name: {restaurant.name}</p>
-      <p>Location: {restaurant.location.address1}</p>
-      <p>Phone: {restaurant.phone}</p>
+      {/* <p>Location: {restaurant.location.address1}</p> */}
+      {/* <p>Phone: {restaurant.phone}</p> */}
       <p>Rating: {restaurant.rating}</p>
       <img src={restaurant.image_url} alt={restaurant.name} className="image"/>
       </div>

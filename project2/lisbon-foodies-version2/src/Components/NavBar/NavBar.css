@@ -163,4 +163,8 @@ img {
     width: 170px;
     margin-top: 85px;
 }
+
+.hamburger.burger-is-active:after {
+    width: 200%;
+}
 }
