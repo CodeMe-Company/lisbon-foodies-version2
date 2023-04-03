@@ -23,8 +23,8 @@ const RestaurantList = () => {
           "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=lisbon&term=restaurants&categories=vegetarian&sort_by=best_match&limit=50",
           options
         )
-        // .then((response) => setRestaurants(response.data.businesses))
-        .then((response) => console.log(response.data.businesses))
+        .then((response) => setRestaurants(response.data.businesses))
+        // .then((response) => console.log(response.data.businesses))
         .catch((err) => console.error(err));
     };
   

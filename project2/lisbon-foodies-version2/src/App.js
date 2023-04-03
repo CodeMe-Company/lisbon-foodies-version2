@@ -6,7 +6,6 @@ import HomePage from './Components/HomePage/HomePage';
 import RestaurantList from "./Components/RestaurantList/RestaurantList";
 import Footer from "./Components/Footer/Footer";
 import RestaurantDetails from "./Components/RestaurantDetails/RestaurantDetails";
-import RestaurantCard from "./Components/RestaurantCard/RestaurantCard";
 
 function App() {
 
@@ -19,6 +18,8 @@ function App() {
         <Route path="/restaurant-list" element={<RestaurantList />} />
         <Route path="/restaurants/:id" element={<RestaurantDetails />} />
       </Routes> 
+      
+      
       <Footer />
       
   

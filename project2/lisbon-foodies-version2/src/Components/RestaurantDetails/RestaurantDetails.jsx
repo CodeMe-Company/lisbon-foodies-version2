@@ -32,16 +32,26 @@ const RestaurantDetails = () => {
     }, [])
   
   return (
-    <div>
+    <div className='main-container'>
         {restaurant ? (
         <div className="restaurant-card">
-          <h1>{restaurant.name}</h1>
+          <h1 className='h1-text'>{restaurant.name}</h1>
+          <div className='images-div'>
           <img className="img-restaurant" src={restaurant.image_url} alt={restaurant.name} />
+          <img className="img-restaurant" src={restaurant.photos[1]} alt={restaurant.name} />
+          <img className="img-restaurant" src={restaurant.photos[2]} alt={restaurant.name} />
+          </div>
+          <div className='bottom-page'>
+          <div>
           <h2>Rating: {restaurant.rating}</h2>
           <h2>Location: {restaurant.location.address1}</h2>
           <h2>Phone: {restaurant.phone}</h2> 
           <h2>Price: {restaurant.price}</h2>
-          <h2>Distance: {restaurant.distance}</h2>
+          </div>
+          <div className='reviews'>
+            <h2 className='reviews-title'>Reviews</h2>
+            </div>
+            </div>
           </div>
         ) : null}
     </div>

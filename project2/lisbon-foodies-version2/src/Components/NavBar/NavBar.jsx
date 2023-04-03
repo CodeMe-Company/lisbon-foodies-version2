@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import Logo from "./Lisbon Foodies.jpg";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import RestaurantList from './../RestaurantList/RestaurantList';
-import HomePage from "../HomePage/HomePage";
+
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
