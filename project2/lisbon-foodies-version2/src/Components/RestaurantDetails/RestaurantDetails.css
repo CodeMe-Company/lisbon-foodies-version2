@@ -19,6 +19,15 @@
     border-width: 3px;
 }
 
+.line, .line-bottom {
+    margin-right: 20px;
+    border: 1px solid #455639;
+}
+
+.line-bottom {
+    margin-top: 50px;
+}
+
 h2 {
     font-family: 'Inria Serif', serif;
     font-weight: 400;
@@ -26,7 +35,7 @@ h2 {
 }
 
  .reviews-title {
-    margin-top: 15%;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 150%;
  }
