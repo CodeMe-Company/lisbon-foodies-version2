@@ -39,7 +39,11 @@
         font-size: 500%;
     }
 
+    .title {
+        margin-top: 18%;
+    }
     .seeParagraph {
         font-size: 400%;
     }
+
 }

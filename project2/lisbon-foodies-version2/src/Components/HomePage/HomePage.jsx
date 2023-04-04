@@ -9,7 +9,7 @@ const HomePage = () => {
           <h1 className="title">Lisbon Foodies</h1>
           <img className="img-dish" src={dishPhoto} alt="dish-photo" />
           <h2 className="textMain">Find a place in Lisbon for your next green meal</h2>
-          <p className="seeParagraph">See <Link path="/restaurant-list">All  Restaurants</Link></p>
+          <Link path="/restaurant-list"><p className="seeParagraph">See All Restaurants</p></Link>
     </div>
   )
 }

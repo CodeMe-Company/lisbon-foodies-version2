@@ -18,7 +18,7 @@ const NavBar = () => {
     <div className="navbar-container">
       <Link to="/">
       <div className='logo'>
-        <img
+        <img className="logo-img"
           src={Logo}
           alt="logo"
           // style={{ width: "100px", height: "100px" }}
