@@ -1,13 +1,13 @@
-import './App.css';
-import NavBar from './Components/NavBar/NavBar';
-import HomePage from './Components/HomePage/HomePage';
+
+import AboutUs from './Components/About-us.jsx';
+
+
 
 function App() {
  
   return (
     <div className="App">
-      <NavBar />
-      <HomePage />
+      <AboutUs />
     </div>
   );
 }
