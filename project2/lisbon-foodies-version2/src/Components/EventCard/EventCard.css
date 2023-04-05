@@ -1,0 +1,33 @@
+h4 > p {
+    font-weight: normal;
+    color: black;
+  }
+
+  .imageEvent {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1pc;
+  }
+
+h4 {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+a:hover {
+  font-size: 14pt;
+  color: rgb(3, 26, 4);
+}
+
+@media screen and (max-width: 767px) {
+  .imageEvent {
+    width: 300px;
+    height: 300px;
+  }
+}

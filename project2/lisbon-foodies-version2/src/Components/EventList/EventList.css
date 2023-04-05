@@ -1,0 +1,36 @@
+.eventContainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .eventCard {
+    width: 200px;
+    height: 920px;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    border-radius: 1pc;
+    box-shadow: 10px 10px 20px rgba(1, 58, 1, 0.3);
+  }
+  
+  .eventAll {
+  text-align: center;
+  color: green;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .eventContainer {
+      justify-content: center;
+    }
+  
+    .eventCard {
+      margin: 0px;
+      width: 300px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  
+    }
+  
+  }
