@@ -41,13 +41,14 @@ const RestaurantList = () => {
   }, [search]);
 
   return (
-    <>
-      <div>
+    <div className="restaurants-list-container">
+
         <SearchBar
           search={search}
           handleChange={handleChange}
           restaurantSearch={restaurantSearch}
         />
+      <div className="restaurants-cards-container">
         {restaurants && search === ""
           ? restaurants.map((restaurant) => (
               <Link  key={restaurant.id} to={`/restaurants/${restaurant.id}`}>
@@ -63,7 +64,7 @@ const RestaurantList = () => {
             ))
           : null}
       </div>
-    </>
+    </div>
   );
 };
 

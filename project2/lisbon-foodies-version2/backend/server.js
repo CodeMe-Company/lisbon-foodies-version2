@@ -44,7 +44,7 @@ app.get("/restaurant-details/:id", (req, res) => {
     .catch((error) => console.error(error));
 });
 
-//* get restaurants reviews
+//* get all reviews from a single restaurant
 app.get("/restaurant-reviews/:id", (req, res) => {
   const id = req.params.id;
   const options = {
