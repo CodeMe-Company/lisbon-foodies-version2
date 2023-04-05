@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './footer.css'
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
     <footer style={{ backgroundColor: "#608E3F" }}>
       <div className="footer-container">
         <div className="social-media">
-        <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src="https://cdn4.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook" width="30" height="30" />
           </a>
           <a href="https://www.instagram.com/" target="_blank">
@@ -14,7 +15,7 @@ function Footer() {
           </a>
         </div>
         <div className="about-us">
-          <a href="#">About Us</a>
+          <Link to="/about-us">About Us</Link>
         </div>
       </div>
     </footer>
