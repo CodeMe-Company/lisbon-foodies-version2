@@ -71,6 +71,16 @@ h2 {
 
  .p-rating {
     margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ .rating-stars-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
  }
 
  .star-icon {
