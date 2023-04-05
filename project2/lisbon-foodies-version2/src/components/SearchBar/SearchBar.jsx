@@ -18,7 +18,7 @@ const SearchBar = ({ search, handleChange, restaurantSearch }) => {
       </div>
       <ul>
         {restaurantSearch && search !== ""
-          ? restaurantSearch.map((restaurant) => (
+          ? restaurantSearch.filter((restaurant, index) => index < 3).map((restaurant) => (
               <div key={restaurant.id}>
               <Link to={`/restaurant/${restaurant.id}`}>
                 <img src={restaurant.image_url} alt={restaurant.name} className="imageSearch"/>

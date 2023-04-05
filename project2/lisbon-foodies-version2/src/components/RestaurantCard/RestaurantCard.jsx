@@ -1,19 +1,22 @@
 import React from 'react'
-import "./RestaurantCard.css";
+import "./RestaurantCard.css"
+import { Link } from "react-router-dom";
 
 
 const RestaurantCard = ({restaurant}) => {
 
   return (
-    
-    <div key={restaurant.id}>
-      <p>Name: {restaurant.name}</p>
-      {/* <p>Location: {restaurant.location.address1}</p> */}
-      {/* <p>Phone: {restaurant.phone}</p> */}
-      <p className="p-restaurant-card-text">Rating:</p><p> {restaurant.rating}</p>
-      <img src={restaurant.image_url} alt={restaurant.name} className="image"/>
+    <Link to={`/restaurant/${restaurant.id}`} className='restCardLink'>
+      <div key={restaurant.id} className='restCard'>
+        <img src={restaurant.image_url} alt={restaurant.name} className='image' />
+        <div className='info'>
+          <p className='name'>{restaurant.name}</p>
+          <br></br>
+          <p className='rating'>Rating: {restaurant.rating}</p>
+        </div>
       </div>
-  )
+    </Link>
+  );
 }
 
 export default RestaurantCard

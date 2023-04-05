@@ -1,4 +1,25 @@
 .image {
+    margin-top: -1px;
     width: 200px;
-    height: auto;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
 }
+
+.restCard {
+    width: 200px;
+    height: 295px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 40px;
+    border: 1px #4C7032;
+    border-radius: 1pc;
+    box-shadow: 10px 10px 20px rgba(37, 72, 32, 0.986);
+    text-align: center;
+}
+
+.restCard p {
+    margin: 0;
+  }
