@@ -9,10 +9,10 @@ const EventCard = ({event}) => {
     <div key={event.id} className='eventCard'>
       
       <img src={event.image_url} alt={event.name} className="imageEvent"/>
-      <h4>Name: <p>{event.name}</p></h4>
-      <h4>Location: <p>{event.location.address1}</p></h4>
-      <h4>Description: <p>{event.description}</p></h4>
-      <h4>Date: <p>{formattedDate} {formattedTime}</p></h4>
+      <h4 className='h4-eventCard'>Name: <p>{event.name}</p></h4>
+      <h4 className='h4-eventCard'>Location: <p>{event.location.address1}</p></h4>
+      <h4 className='h4-eventCard'>Description: <p>{event.description}</p></h4>
+      <h4 className='h4-eventCard'>Date: <p>{formattedDate} {formattedTime}</p></h4>
       <p>
         {event.is_free
           ? 'This event is '

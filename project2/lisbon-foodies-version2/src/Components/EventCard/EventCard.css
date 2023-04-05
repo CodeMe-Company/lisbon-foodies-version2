@@ -1,4 +1,4 @@
-h4 > p {
+.h4-eventCard > p {
     font-weight: normal;
     color: black;
   }
@@ -10,19 +10,19 @@ h4 > p {
     border-radius: 1pc;
   }
 
-h4 {
-  color: green;
+.h4-eventCard {
+  color: #4C7032;
 }
 
 a {
   text-decoration: none;
-  color: green;
+  color: #4C7032;
   font-weight: bold;
 }
 
 a:hover {
   font-size: 14pt;
-  color: rgb(3, 26, 4);
+  color: #4C7032;
 }
 
 @media screen and (max-width: 767px) {

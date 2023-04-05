@@ -21,8 +21,8 @@ useEffect(() => {
 
     return (
         <div className='eventAll'>  
-        <h3>Here you can see all the events happening in Lisbon.</h3>
-        <h4>Not all events are exclusively about food, some of them you can grab a drink too!</h4>
+        <h3 className='h3-text'>See all events happening in Lisbon.</h3>
+        <h4 className="h4-text">Not all events are exclusively about food, some of them you can grab a drink too!</h4>
           <div className='eventContainer'>
     
             { events ? events.map((event) => (
