@@ -56,7 +56,7 @@ h2 {
 
  .li-reviews {
     list-style: none;
-    font-family: ;
+    font-family: 'Inria Serif', serif;
  }
 
  .p-text {
@@ -82,6 +82,10 @@ h2 {
     color: #3d4a33;
     border-color: #455639;
     border-radius: 12%;
+ }
+
+ .bolded{
+    font-weight: bold;
  }
 
 @media screen and (min-width:700px) {

@@ -35,13 +35,18 @@ const RestaurantDetails = () => {
     getReview();
   }, []);
 
+  // const [addReview, setAddReview] = useState({});
+  const [newReviews, setNewReviews] = useState(true);
+
    const handleSubmit = (event, addReview) => {
      event.preventDefault();
     //   console.log("id:", uuidv4());
     // const newReview = { id: uuidv4(), ...addReview };
     // console.log("list", newReview);
     // setReviews([newReview, ...reviews]);
-     setReviews([addReview, ...reviews]);
+    // setNewReviews([addReview, ...newReviews]);
+    setNewReviews(false)
+    setReviews([...reviews, addReview]);
    }
   
   return (
@@ -66,27 +71,36 @@ const RestaurantDetails = () => {
           <hr className="line" />
           <div className="bottom-page">
             <div>
-              <h2 className="h2-text">Rating: {restaurant.rating}</h2>
-              <h2 className="h2-text">Location: {restaurant.location.address1}</h2>
-              <h2 className="h2-text">Phone: {restaurant.phone}</h2>
-              <h2 className="h2-text">Price: {restaurant.price}</h2>
+              <h2 className="h2-text"><span className="bolded">Rating:</span> {restaurant.rating}</h2>
+              <h2 className="h2-text"><span className="bolded">Location:</span> {restaurant.location.address1}</h2>
+              <h2 className="h2-text"><span className="bolded">Phone:</span> {restaurant.phone}</h2>
+              <h2 className="h2-text"><span className="bolded">Price:</span> {restaurant.price}</h2>
             </div>
             <hr className="line-bottom" />
             <div className="reviews">
               <h2 className="reviews-title">Reviews</h2>
               <ul className="ul-reviews">
-                {reviews
-                  ? reviews.map((review) => (
-                    <li className="li-reviews" key={review.id}>
+                {reviews 
+                  ? reviews.map((review, index) => (
+                    <li className="li-reviews" key={review?.id ? review.id : index }>
                       <p className="p-text">{review.text}</p>
-                      <p className="p-name">{review.user.name}</p>
+                      <p className="p-name">{review?.user?.name ? review.user.name : review.name }</p>
                       <p className="p-rating">Rating: {review.rating}  <img className="star-icon" src={Star} alt="star" /></p>
                       </li>
                     ))
                   : null}
+                {/* {newReviews
+                  ? newReviews.map((review, index) => (
+                    <li className="li-reviews" key={index}>
+                      <p className="p-text">{review.message}</p>
+                      <p className="p-name">{review.name}</p>
+                      <p className="p-rating">Rating: {review.rating}  <img className="star-icon" src={Star} alt="star" /></p>
+                      </li>
+                    ))
+                  : null} */}
               </ul>
             </div>
-            <AddReview handleSubmit={handleSubmit} />
+           {newReviews ? <AddReview handleSubmit={handleSubmit} /> : null}
           </div>
         </div>
       ) : null}

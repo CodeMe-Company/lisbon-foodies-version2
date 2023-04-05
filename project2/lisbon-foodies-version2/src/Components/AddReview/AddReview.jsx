@@ -16,10 +16,10 @@ const AddReview = ({handleSubmit}) => {
           <form onSubmit={(event) => handleSubmit(event, addReview)}>
               <label htmlFor="name-label">Your Name: </label> <br />
               <input type="text" name="name" onChange={handleChange} /><br />
-              <label htmlFor="email-label">Rating: </label> <br />
-              <input type="text" name="email" onChange={handleChange}   /><br />
-              <label htmlFor="message">Write Your Review</label><br />
-              <textarea name="review-message" id="review-message" onChange={handleChange} ></textarea><br />
+              <label htmlFor="rating">Rating: </label> <br />
+              <input type="number" name="rating" onChange={handleChange}   /><br />
+              <label htmlFor="text">Write Your Review</label><br />
+              <textarea name="text" type="text" id="review-message" onChange={handleChange} ></textarea><br />
               <br />
             <button className="add-review-button" type="submit"> Add Review </button>
           </form>
