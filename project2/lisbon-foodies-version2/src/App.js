@@ -1,5 +1,5 @@
 
-import AboutUs from './Components/About-us.jsx';
+import AboutUs from './Components/About-us/About-us.jsx';
 
 
 
