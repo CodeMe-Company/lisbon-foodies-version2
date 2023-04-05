@@ -6,6 +6,7 @@ import HomePage from './Components/HomePage/HomePage';
 import RestaurantList from "./Components/RestaurantList/RestaurantList";
 import Footer from "./Components/Footer/Footer";
 import RestaurantDetails from "./Components/RestaurantDetails/RestaurantDetails";
+import EventList from "./Components/EventList/EventList";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/restaurant-list" element={<RestaurantList />} />
         <Route path="/restaurants/:id" element={<RestaurantDetails />} />
+        <Route path="/event-list" element={<EventList />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes> 
       
