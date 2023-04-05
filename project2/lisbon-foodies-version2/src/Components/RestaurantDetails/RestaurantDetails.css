@@ -1,0 +1,64 @@
+.h1-text {
+    font-family: 'Inria Serif', serif;
+    font-weight: 700;
+    font-size: 250%;
+}
+.restaurant-card {
+    margin-left: 10%;
+    margin-top: 15%;
+    
+}
+
+.images-div {
+    margin-bottom: 12%;
+}
+
+.img-restaurant {
+    margin-right: 8%;
+    border-radius: 20%;
+    border-width: 3px;
+}
+
+.line, .line-bottom {
+    margin-right: 20px;
+    border: 1px solid #455639;
+}
+
+.line-bottom {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    font-size: 140%;
+}
+
+ .reviews-title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 150%;
+ }
+
+@media screen and (min-width:700px) {
+    .h1-text {
+        font-size: 400%;
+        text-align: center;
+        }
+    .img-restaurant {
+        margin-right: 8%;
+        border-radius: 20%;
+        border-width: 3px;
+        width: 300px;
+    }
+
+    .images-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 300%;
+    }
+
+}

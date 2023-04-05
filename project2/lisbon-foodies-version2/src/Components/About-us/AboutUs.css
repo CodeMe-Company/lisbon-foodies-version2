@@ -42,6 +42,12 @@
   margin: 10px;
 }
 
+.team-member img {
+  width: 100px;
+  height: auto;
+  margin: 20px 0;
+}
+
 .member-info {
   display: flex;
   flex-direction: column;
@@ -49,15 +55,20 @@
   align-items: center;
   height: 100%;
   background-color: white;
-  width: 400px; /* valor fixo para a largura */
+  width: 400px;
+  text-align: center;
 }
+
 .member-info h3 {
   font-size: 24px;
   font-weight: bold;
   padding: 50px;
   border-radius: 50px;
-  background-color: #608E3F;
+  background-color: #608e3f;
   color: black;
-  width: 55%;
+  width: 70%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
