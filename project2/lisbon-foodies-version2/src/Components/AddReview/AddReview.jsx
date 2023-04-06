@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import RatingForm from "../RatingStars/RatingStarsForm";
 import { UserInfoContext } from "../context/UserInfoContext";
 
 const AddReview = ({handleSubmit}) => {
@@ -12,6 +13,11 @@ const AddReview = ({handleSubmit}) => {
         setAddReview({ ...addReview, [event.target.name]: event.target.value })
     };
 
+    const handleStars = (number) => {
+      setAddReview({ ...addReview, "rating": number })
+  };
+
+
 
   return (
       <div>
@@ -20,7 +26,9 @@ const AddReview = ({handleSubmit}) => {
               <label htmlFor="name-label">Your Name: </label> <br />
               {userLogin.username ? <input type="text" value={userLogin.username} name="name" /> : <input type="text" name="name" onChange={handleChange} /> }<br />
               <label htmlFor="rating">Rating: </label> <br />
-              <input type="number" name="rating" onChange={handleChange}   /><br />
+              <RatingForm stars={0} handleStars={handleStars}  />
+              <br />
+              {/* <input type="number" name="rating" onChange={handleChange}   /><br /> */}
               <label htmlFor="text">Write Your Review</label><br />
               <textarea name="text" type="text" id="review-message" onChange={handleChange} ></textarea><br />
               <br />
