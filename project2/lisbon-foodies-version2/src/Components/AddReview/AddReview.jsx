@@ -21,19 +21,22 @@ const AddReview = ({handleSubmit}) => {
 
   return (
       <div>
-          <h3 className='h2-addReview'>To add a review, please fill in the form below</h3>
-          <form onSubmit={(event) => handleSubmit(event, addReview)}>
-              <label htmlFor="name-label">Your Name: </label> <br />
-              {userLogin.username ? <input type="text" value={userLogin.username} name="name" /> : <input type="text" name="name" onChange={handleChange} /> }<br />
-              <label htmlFor="rating">Rating: </label> <br />
-              <RatingForm stars={0} handleStars={handleStars}  />
+      <h3 className='h2-addReview'>To add a review, please fill in the form below</h3> <br />
+      <div className="review-form">
+        <form onSubmit={(event) => handleSubmit(event, addReview)}>
+          <br />
+              <label id="label-name" htmlFor="name-label">Your Name: </label> <br />  <br />
+              {userLogin.username ? <input id="input-review" type="text" placeholder="Type your name" value={userLogin.username} name="name" /> : <input id="input-review" placeholder="Type your name" type="text" name="name" onChange={handleChange} /> }<br />
+              <br /><label  id="label-review" htmlFor="rating">Rating: </label> <br />
+              <div className="review"><RatingForm stars={0} handleStars={handleStars} /></div>
               <br />
               {/* <input type="number" name="rating" onChange={handleChange}   /><br /> */}
-              <label htmlFor="text">Write Your Review</label><br />
-              <textarea name="text" type="text" id="review-message" onChange={handleChange} ></textarea><br />
+              <label id="label-review" htmlFor="text">Write Your Review:</label><br /> <br />
+              <textarea id="input-review"  placeholder="Leave a review" name="text" type="text" onChange={handleChange} ></textarea><br />
               <br />
             <button className="add-review-button" type="submit"> Add Review </button>
-          </form>
+        </form>
+        </div>
     </div>
   )
 }
