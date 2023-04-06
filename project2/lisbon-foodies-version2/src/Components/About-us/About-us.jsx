@@ -16,7 +16,7 @@ const AboutUs = () => {
         <br />
         However, here in Lisbon it is still hard to find green options - especially all in one place! And that is why we decided to bring LISBON FOODIES to life!
       </p>
-      <h2>Our Team (Don’t be shy, say hello :) )</h2>
+      <h2>Our Team</h2>
       <div className="team-members">
         <div className="team-member">
           <div className="member-info">
