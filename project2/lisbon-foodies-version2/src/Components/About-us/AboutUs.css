@@ -8,25 +8,28 @@
   margin: 50px auto 0 auto;
   font-family: "Inria Serif", serif;
   max-width: 100%;
+  
 }
 
 .about-us-container h1 {
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: bold;
   text-align: left;
+
 }
 
 .about-us-container p {
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5;
   width: 100%;
+  font-weight: bold;
 }
 
 .about-us-container h2 {
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -39,6 +42,7 @@
   line-height: 60px;
   text-align: center;
   margin-top: 40px;
+  font-size: 30px;
 }
 
 .member-info h3 img {
@@ -48,42 +52,82 @@
   margin-right: -50px;
   margin-top: 10px;
 }
-
-@media (min-width: 768px) {
-
-
-  .member-info h3 {
-    padding: 50px 400px 50px 50px;
+@media (min-width: 700px) {
+  .about-us-container h1 {
+    font-size: 30px;
   }
-
+  
+  .about-us-container p {
+    font-size: 18px;
+  }
+  
+  .about-us-container h2 {
+    font-size: 24px;
+  }
+  
+  .member-info h3 {
+    font-size: 18px;
+  }
+  
   .member-info h3 img {
-    margin-top: 25px;
+    width: 80px;
+    height: 50px;
+    margin-right: -60px;
+    margin-top: 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 700px) {
+  .about-us-container h1 {
+    font-size: 60px;
+  }
+
+  .about-us-container p {
+    font-size: 22px;
+  }
+
+  .about-us-container h2 {
+    font-size: 36px;
+  }
+
   .member-info h3 {
-    font-size: 16px;
-    padding: 20px 200px 20px 20px;
+    font-size: 30px;
+    padding: 50px;
+    line-height: 60px;
+    margin-top: 40px;
   }
 
   .member-info h3 img {
-    width: 50px;
-    height: 30px;
-    margin-right: -30px;
-    margin-top: 5px;
+    width: 70px;
+    height: 40px;
+    margin-right: -50px;
+    margin-top: 10px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 699px) {
+  .about-us-container h1 {
+    font-size: 30px;
+  }
+
+  .about-us-container p {
+    font-size: 18px;
+  }
+
+  .about-us-container h2 {
+    font-size: 24px;
+  }
+
   .member-info h3 {
-    font-size: 14px;
-    padding: 20px 100px 20px 20px;
+    font-size: 18px;
+    padding: 20px;
+    line-height: 40px;
+    margin-top: 20px;
   }
 
   .member-info h3 img {
     width: 40px;
-    height: 25px;
+    height: 30px;
     margin-right: -20px;
     margin-top: 5px;
   }
@@ -118,5 +162,16 @@
     height: 20px;
     margin-right: -10px;
     margin-top: 5px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .member-info h3 {
+    padding: 50px 400px 50px 50px;
+  }
+
+  .member-info h3 img {
+    margin-top: 25px;
   }
 }
