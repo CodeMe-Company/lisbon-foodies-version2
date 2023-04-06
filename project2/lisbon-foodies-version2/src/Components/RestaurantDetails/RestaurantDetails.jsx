@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./RestaurantDetails.css";
 import Star from "./iconStar.png";
 import AddReview from "../AddReview/AddReview";
 import RatingStars from "../RatingStars/RatingStars";
+import { UserInfoContext } from "../context/UserInfoContext";
 
 const RestaurantDetails = () => {
   const [restaurant, setRestaurant] = useState();
   const { id } = useParams();
+  const { userLogin } = useContext(UserInfoContext)
+
 
   const getRestaurant = () => {
     axios
       .get(`http://localhost:8080/restaurant-details/${id}`)
       .then((response) => setRestaurant(response.data))
-      // .then((response) => console.log(response.data))
       .catch((err) => console.error(err));
   };
 
@@ -28,7 +30,6 @@ const RestaurantDetails = () => {
     axios
       .get(`http://localhost:8080/restaurant-reviews/${id}`)
       .then((response) => setReviews(response.data))
-      // .then((response) => console.log(response.data))
       .catch((err) => console.error(err));
   };
 
@@ -39,8 +40,12 @@ const RestaurantDetails = () => {
   // const [addReview, setAddReview] = useState({});
   const [newReviews, setNewReviews] = useState(true);
 
-  const handleSubmit = (event, addReview) => {
-    event.preventDefault();
+   const handleSubmit = (event, addReview) => {
+     event.preventDefault();
+     if(userLogin.username){
+      addReview["name"] = userLogin.username;
+     }
+
     //   console.log("id:", uuidv4());
     // const newReview = { id: uuidv4(), ...addReview };
     // console.log("list", newReview);

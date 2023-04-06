@@ -1,12 +1,13 @@
 import "./App.css";
 import {Routes, Route} from "react-router-dom"
-import AboutUs from './components/About-us/About-us';
-import NavBar from './components/NavBar/NavBar';
-import HomePage from './components/HomePage/HomePage';
-import RestaurantList from "./components/RestaurantList/RestaurantList";
-import Footer from "./components/Footer/Footer";
-import RestaurantDetails from "./components/RestaurantDetails/RestaurantDetails";
-import EventList from "./components/EventList/EventList";
+import AboutUs from './Components/About-us/About-us.jsx';
+import NavBar from './Components/NavBar/NavBar';
+import HomePage from './Components/HomePage/HomePage';
+import RestaurantList from "./Components/RestaurantList/RestaurantList";
+import Footer from "./Components/Footer/Footer";
+import RestaurantDetails from "./Components/RestaurantDetails/RestaurantDetails";
+import EventList from "./Components/EventList/EventList";
+import UserLogin from "./Components/UserLogin/UserLogin/UserLogin";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/restaurants/:id" element={<RestaurantDetails />} />
         <Route path="/event-list" element={<EventList />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/login" element={< UserLogin/>} />
       </Routes> 
       
       <Footer />

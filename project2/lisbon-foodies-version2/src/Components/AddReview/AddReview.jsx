@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import RatingForm from "../RatingStars/RatingStarsForm";
+import { UserInfoContext } from "../context/UserInfoContext";
 
 const AddReview = ({handleSubmit}) => {
+
+  const { userLogin } = useContext(UserInfoContext)
 
     const [addReview, setAddReview] = useState({});
     const handleChange = (event) => {
@@ -21,7 +24,7 @@ const AddReview = ({handleSubmit}) => {
           <h3 className='h2-addReview'>To add a review, please fill in the form below</h3>
           <form onSubmit={(event) => handleSubmit(event, addReview)}>
               <label htmlFor="name-label">Your Name: </label> <br />
-              <input type="text" name="name" onChange={handleChange} /><br />
+              {userLogin.username ? <input type="text" value={userLogin.username} name="name" /> : <input type="text" name="name" onChange={handleChange} /> }<br />
               <label htmlFor="rating">Rating: </label> <br />
               <RatingForm stars={0} handleStars={handleStars}  />
               <br />
