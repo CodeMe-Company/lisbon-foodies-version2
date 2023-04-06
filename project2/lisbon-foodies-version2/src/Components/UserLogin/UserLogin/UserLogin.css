@@ -12,3 +12,23 @@
   @media screen and (max-width: 767px) {
     
   }
+
+  .userForm {
+    margin-left: 300px;
+    width: 50%;
+    background-color: #608E3F;
+    margin-top: 100px;
+    display:grid;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .buttonUser {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .userForm {
+      margin-left: 120px;
+    }
+  }

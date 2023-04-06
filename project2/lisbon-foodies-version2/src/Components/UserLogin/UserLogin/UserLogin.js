@@ -20,8 +20,9 @@ const handleChange = (event) => {
 }
 
   return (
-    <div>
+    <div className='userForm'>
         <h3>Login here:</h3>
+        <br></br>
        <form className='log-in-form' onSubmit={handleSubmit}>
           <label>
           <span>Username:</span>
@@ -32,6 +33,9 @@ const handleChange = (event) => {
             onChange={(event) => handleChange(event)}
             placeholder='Enter username'
           /> 
+          <br></br>
+          <br></br>
+
           </div>  
           </label>
           <label>
@@ -43,9 +47,11 @@ const handleChange = (event) => {
             onChange={(event) => handleChange(event)}
             placeholder='Enter password'
           />
+          <br></br>
+          <br></br>
           </div>
           </label>
-          <button type="submit">Log in</button>
+          <button type="submit" className='buttonUser'>Log in</button>
       </form>
     </div>
   );
