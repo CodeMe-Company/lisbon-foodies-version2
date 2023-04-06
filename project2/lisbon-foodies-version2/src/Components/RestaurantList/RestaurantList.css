@@ -1,10 +1,28 @@
 .restaurantList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .pageText {
-    text-align: center;
+.pageText {
+  text-align: center;
+  color: #4C7032;
+  font-family: 'Inria Serif', serif;
+  font-size: 110%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.searchBarAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px; 
+}
+
+@media screen and (max-width: 767px) {
+  .restaurantList{
+    justify-content: center;
   }
+}

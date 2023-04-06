@@ -14,17 +14,17 @@ const EventCard = ({ event }) => {
       <h4 className="h4-eventCard">
         Location: <p>{event.location.address1}</p>
       </h4>
-      <h4 className="h4-eventCard">
+     {/*} <h4 className="h4-eventCard">
         Description: <p>{event.description}</p>
       </h4>
-      {/* <h4 className='h4-eventCard'>Date: <p>{formattedDate} {formattedTime}</p></h4> */}
+      { <h4 className='h4-eventCard'>Date: <p>{formattedDate} {formattedTime}</p></h4> */}
       <p>
         {event.is_free ? "This event is " : "This event is not "}
         {event.is_free && <strong>free!</strong>}
         {!event.is_free && <strong>not free.</strong>}
       </p>
       <p>
-        For more information <a href={event.event_site_url}>Click here</a>
+        For more information <a className="aEvent" href={event.event_site_url}>Click here</a>
       </p>
       <br></br>
     </div>

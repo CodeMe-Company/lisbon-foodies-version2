@@ -43,11 +43,13 @@ const RestaurantList = () => {
   return (
     <>
       <div>
+        <div className="searchBarAll">
         <SearchBar
           search={search}
           handleChange={handleChange}
           restaurantSearch={restaurantSearch}
         />
+        </div>
         <br></br>
         <h3 className="pageText">Here you can see all the vegetarians restaurants available!</h3>
         <br></br>
