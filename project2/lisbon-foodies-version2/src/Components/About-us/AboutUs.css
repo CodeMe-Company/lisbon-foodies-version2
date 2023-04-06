@@ -5,8 +5,9 @@
   padding: 0 16px;
   box-sizing: border-box;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   font-family: "Inria Serif", serif;
+  max-width: 100%;
 }
 
 .about-us-container h1 {
@@ -20,6 +21,7 @@
   margin-top: 30px;
   font-size: 16px;
   line-height: 1.5;
+  width: 100%;
 }
 
 .about-us-container h2 {
@@ -28,47 +30,93 @@
   font-weight: bold;
 }
 
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-.team-member {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px;
-}
-
-.team-member img {
-  width: 100px;
-  height: auto;
-  margin: 20px 0;
-}
-
-.member-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: white;
-  width: 400px;
-  text-align: center;
-}
-
 .member-info h3 {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 50px;
-  border-radius: 50px;
   background-color: #608e3f;
+  border-radius: 70px;
+  padding: 50px 20px;
   color: black;
-  width: 70%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.member-info h3 img {
+  width: 70px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: -50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+
+  .member-info h3 {
+    padding: 50px 400px 50px 50px;
+  }
+
+  .member-info h3 img {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .member-info h3 {
+    font-size: 16px;
+    padding: 20px 200px 20px 20px;
+  }
+
+  .member-info h3 img {
+    width: 50px;
+    height: 30px;
+    margin-right: -30px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .member-info h3 {
+    font-size: 14px;
+    padding: 20px 100px 20px 20px;
+  }
+
+  .member-info h3 img {
+    width: 40px;
+    height: 25px;
+    margin-right: -20px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  /* iPhone 8 */
+  .member-info h3 {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .member-info h3 img {
+    width: 40px;
+    height: 30px;
+    margin-right: -20px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .member-info h3 {
+    font-size: 12px;
+    padding: 20px 50px 20px 20px;
+  }
+
+  .member-info h3 img {
+    width: 30px;
+    height: 20px;
+    margin-right: -10px;
+    margin-top: 5px;
+  }
 }
