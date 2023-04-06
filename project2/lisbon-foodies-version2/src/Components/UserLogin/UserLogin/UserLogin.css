@@ -1,0 +1,14 @@
+.log-in-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .h3-text {
+    font-size: 200%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    
+  }
