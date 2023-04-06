@@ -41,6 +41,13 @@ h2 {
     font-size: 140%;
 }
 
+.h2-addReview {
+    font-family: 'Inria Serif', serif;
+        font-weight: 700;
+        font-size: 140%;
+}
+
+
  .reviews-title {
     margin-top: 20px;
     font-weight: 700;
@@ -89,14 +96,45 @@ h2 {
 
  .add-review-button {
     width: 30%;
-    color: #3d4a33;
+    color: black;
     border-color: #455639;
     border-radius: 12%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-family: 'Inria Serif', serif;
+    font-weight: 700;
  }
 
  .bolded{
     font-weight: bold;
  }
+
+ .review-form {
+     background-color: #608E3F;
+     border-radius: 20%;
+     width: 75%;
+     font-family: 'Inria Serif', serif;
+ }
+
+  #input-review, #review-message, #label-review {
+    border-radius: 4%;
+    border-color: #455639;
+    align-self: flex-start;
+    margin-left: 10%;
+  }
+
+  #label-name {
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .review {
+    margin-left: 10%;
+  }
+
+  #input-review {
+    border-style: none;
+  }
 
 @media screen and (min-width:700px) {
     .h1-text {
@@ -133,7 +171,27 @@ h2 {
     }
 
     .add-review-button {
-        width: 13%;
+        width: 30%;
+        margin-left: 25%;
     }
+
+    .review-form {
+        width: 350px;
+        border-radius: 25%;
+    }
+
+    .h2-addReview {
+        font-size: 200%;
+    }
+
+    #review-message, #label-review, .review, #label-name {
+             margin-left: 25%;
+             font-size: 150%;
+         }
+    #input-review {
+        margin-left: 25%;
+    }
+
+    
 
 }
