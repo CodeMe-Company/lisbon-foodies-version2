@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import RestaurantCard from "../RestaurantCard/RestaurantCard";
 import SearchBar from "../SearchBar/SearchBar";
-import { Link } from "react-router-dom";
+import "./RestaurantList.css"
 
 const RestaurantList = () => {
   const [restaurants, setRestaurants] = useState();
@@ -41,30 +41,25 @@ const RestaurantList = () => {
   }, [search]);
 
   return (
-    <div className="restaurants-list-container">
-
+    <>
+      <div>
         <SearchBar
           search={search}
           handleChange={handleChange}
           restaurantSearch={restaurantSearch}
         />
-      <div className="restaurants-cards-container">
-        {restaurants && search === ""
+        <br></br>
+        <h3 className="pageText">Here you can see all the vegetarians restaurants available!</h3>
+        <br></br>
+        <div className="restaurantList">
+        {restaurants
           ? restaurants.map((restaurant) => (
-              <Link  key={restaurant.id} to={`/restaurants/${restaurant.id}`}>
                   <RestaurantCard restaurant={restaurant} />
-              </Link>
             ))
           : null}
-        {restaurantSearch && search !== "" && search.length > 0
-          ? restaurantSearch.map((restaurant) => (
-            <Link key={restaurant.id} to={`/restaurants/${restaurant.id}`} >
-                  <RestaurantCard restaurant={restaurant} />
-              </Link>
-            ))
-          : null}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
