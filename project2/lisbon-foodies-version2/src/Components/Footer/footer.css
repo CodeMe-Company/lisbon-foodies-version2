@@ -51,7 +51,9 @@ a {
     color: black;
   }
 
-    .about-text {
-      color: black;
-    }
+}
+
+.about-text {
+  color: black;
+  font-size: 24px;
 }
