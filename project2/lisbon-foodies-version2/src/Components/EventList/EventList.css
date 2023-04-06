@@ -1,3 +1,7 @@
+body {
+  font-family: 'Inria Serif', serif;
+}
+
 .eventContainer {
     display:flex;
     flex-wrap: wrap;
@@ -11,7 +15,6 @@
 
   .h4-text {
     color: #4C7032;
-    font-family: 'Inria Serif', serif;
     font-size: 110%;
     margin-left: 7%;
     margin-right: 7%;
@@ -19,13 +22,14 @@
   
   .eventCard {
     width: 200px;
-    height: 920px;
+    height: 650px;
     margin-top: 20px;
     margin-right: 80px;
     margin-bottom: 20px;
     border: 1px #4C7032;
     border-radius: 1pc;
     box-shadow: 10px 10px 20px rgba(37, 72, 32, 0.986);
+    font-family: 'Inria Serif', serif;
   }
   
   .eventAll {

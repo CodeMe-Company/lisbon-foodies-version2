@@ -1,11 +1,13 @@
-.search-area{
+.test{
   background-color: rgba(173, 240, 143, 0.336);
-  width: 30%;
-  margin-left: 10%;
+  width: 500px;
+  list-style-type: none;
+  border-radius: 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .search-bar{
-  
   width: 100%;
   border-bottom: 2px none #000;
   border-color: none;
@@ -22,5 +24,45 @@
 
 .imageSearch {
   width: 50px;
-  height: auto;
+  height: 50px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.searchCard {
+  margin-top: -30px;
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin-left: -40px;
+}
+
+.testName {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .imageSearch{
+    display: none;
+  }
+
+  .search-bar {
+    width: 250px;
+    margin-left: 50px;
+
+  }
+
+  .test{
+    margin-left: 50px;
+    width: 250px;
+
+  }
+
 }

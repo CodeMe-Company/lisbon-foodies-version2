@@ -16,15 +16,22 @@ const SearchBar = ({ search, handleChange, restaurantSearch }) => {
           onChange={handleChange}
         />
       </div>
-      <ul>
+      <ul className="test">
         {restaurantSearch && search !== ""
           ? restaurantSearch.filter((restaurant, index) => index < 3).map((restaurant) => (
-              <div key={restaurant.id}>
-              <Link to={`/restaurant/${restaurant.id}`}>
-                <img src={restaurant.image_url} alt={restaurant.name} className="imageSearch"/>
-                <li>{restaurant.name}</li>
-              </Link>
-              </div>
+            <Link
+            to={`/restaurant/${restaurant.id}`}
+            key={restaurant.id}
+          >
+            <div className="searchCard">
+              <img
+                src={restaurant.image_url}
+                alt={restaurant.name}
+                className="imageSearch"
+              />
+              <li className="testName">{restaurant.name}</li>
+            </div>
+          </Link>
             ))
           : null}
       </ul>

@@ -1,33 +1,33 @@
 .h4-eventCard > p {
-    font-weight: normal;
-    color: black;
-  }
+  font-weight: normal;
+  color: black;
+}
 
-  .imageEvent {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 1pc;
-  }
+.imageEvent {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1pc;
+}
 
 .h4-eventCard {
-  color: #4C7032;
+color: #4C7032;
 }
 
-a {
-  text-decoration: none;
-  color: #4C7032;
-  font-weight: bold;
+.aEvent {
+text-decoration: none;
+color: #4C7032;
+font-weight: bold;
 }
 
-a:hover {
-  font-size: 14pt;
-  color: #4C7032;
+.aEvent:hover {
+font-size: 14pt;
+color: #4C7032;
 }
 
 @media screen and (max-width: 767px) {
-  .imageEvent {
-    width: 300px;
-    height: 300px;
-  }
+.imageEvent {
+  width: 300px;
+  height: 300px;
+}
 }
