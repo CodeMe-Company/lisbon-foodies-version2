@@ -31,7 +31,6 @@ const NavBar = () => {
             <nav className={ active ? "side-is-active , mobileNav" : "mobileNav"} >
                 <Link to="/" onClick={handleHamburger}>Home Page</Link>
                 <Link to="/restaurant-list" onClick={handleHamburger}>All Restaurants</Link>
-                <Link to="/register" onClick={handleHamburger}>Register</Link>
                 <Link to="/about-us" onClick={handleHamburger}>About Us</Link>
                 <Link to="/event-list" onClick={handleHamburger}>Event List</Link>
                 <Link to="/login" onClick={handleHamburger}>Log in</Link>
